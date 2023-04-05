@@ -61,4 +61,5 @@ Reset of code : https://www.boag.online/blog/css-reset
 ## Others : 
 
 Dev Icons : https://devicon.dev/ </br>
-Brand icons : https://simpleicons.org/
+Brand icons : https://simpleicons.org/ </br>
+Design system : https://medium.com/swlh/design-system-based-on-the-8pt-grid-2473ca5f0ae1
