@@ -1,0 +1,67 @@
+/* ======================== */
+/* 
+    Ignore the following styles. They are not important to achieve the effect.
+    I'm only using them for looks (overall page background/font styles/centering content).
+*/
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	font-family: "Poppins", sans-serif;
+	background-color: #1a1d24;
+	color: #fff;
+	display: grid;
+	place-items: center;
+}
+/* ======================== */
+.notification {
+	position: absolute;
+	bottom: 50px;
+	left: 50px;
+	width: max-content;
+	padding: 20px 15px;
+	border-radius: 4px;
+	background-color: #141619;
+	color: #f6f5f9;
+	box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1);
+	transform: translateY(30px);
+	opacity: 0;
+	visibility: hidden;
+	animation: fade-in 4s linear forwards;
+}
+.notification__progress {
+	position: absolute;
+	left: 5px;
+	bottom: 5px;
+	width: calc(100% - 10px);
+	height: 3px;
+	transform: scaleX(0);
+	transform-origin: left;
+	background-image: linear-gradient(to right, #539bdb, #3250bf);
+	border-radius: inherit;
+	animation: load 3s 0.25s linear forwards;
+}
+@keyframes fade-in {
+	5% {
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0);
+	}
+	90% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+@keyframes load {
+	to {
+		transform: scaleX(1);
+	}
+}
